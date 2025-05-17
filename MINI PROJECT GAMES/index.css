@@ -1,0 +1,98 @@
+body{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background: #ee4343;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.game-container{
+    background: bisque;
+    border-radius: 10px;
+    box-shadow: 0 7px 18px rgba(0,0,0,1);
+    padding: 20px;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+h1{
+    color: #005e2f;
+    font-style:unset;
+}
+.choices{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+.choice-btn{
+    background: none;
+    border: 3px solid #005e2f;
+    border-radius: 50%;
+    font-size: 55px;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.choice-btn:hover {
+    background: #005e2f;
+    color:white;
+    transform: scale(1.1);
+}
+.result{
+    margin: 20px 0;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: initial;
+}
+.scoreboard{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 23px;
+}
+.player-score,.Computer-score{
+    font-size: 20px;
+    font-style: oblique;
+}
+.rounds{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.game-over{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+#winner-message {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+#restart-btn {
+    padding: 10px 20px;
+    background:#047031;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 17px;
+}
+#restart-btn:hover{
+    background: #0fe708;
+}
+.sound-control{
+    margin-bottom: 15px;
+}
+#bgm-toggle{
+    padding: 5px 10px;
+    background: #15ebc7;
+    border: double;
+    color: rgb(27, 25, 25);
+    border-radius: 5px;
+    cursor: pointer;
+}
+audio{
+    display: none;
+}
